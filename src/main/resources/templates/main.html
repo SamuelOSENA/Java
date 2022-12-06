@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
 </head>
     <body>
-      <header>
-          <nav>
-              <img class="nav-logo" src="/static/img/ICONO.png" th:src="@{/img/ICONO.png}" alt="logo">
+      <header class="main">
+          <nav class="ajustar-nav">
+              <nav>
+                  <img class="nav-logo" src="/static/img/ICONO.png" th:src="@{/img/ICONO.png}" alt="logo">
+              </nav>
+          </nav>
+          <nav class="ajustar">
+
           </nav>
       </header>
         <main class="main">
@@ -33,7 +38,7 @@
                     </div>
                     <div class="row justify-content-start">
                         <div class="col-4">
-                            <a th:href="@{/Listar}" href="inventario.html"><img class="inventario-logo"  src="/static/img/INVENTARIO.png" th:src="@{/img/INVENTARIO.png}" alt="inventario"></a>
+                            <a th:href="@{/Listar}" href="inventario.html"><img class="inventario-logo"  src="../static/img/INVENTARIO.png" th:src="@{/img/INVENTARIO.png}" alt="inventario"></a>
                         </div>
                     </div>
                     <div class="row justify-content-start">
@@ -47,6 +52,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="ajustar">
+
             </div>
         </main>
     </body>
