@@ -171,6 +171,7 @@ a{
     text-align: start;
 }
 .ajustar-compras{
+    padding-left: 40px;
     width: 80%;
     background-color: #E8F7FD;
 }
@@ -194,10 +195,19 @@ a{
 .contenido{
     width: 100%;
     height: 250px;
+    margin-top: 40px;
 }
 .IMG-ref{
+    width: 200px;
+    height: 200px;
+}
+.contenido-img{
     width: 40%;
+    height: 250px;
+    float: left;
 }
 .contenido-p{
     width: 60%;
+    height: 250px;
+    float: right;
 }
