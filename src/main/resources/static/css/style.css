@@ -166,3 +166,38 @@ a{
     border-radius: 50%;
     border:#333174 1px solid;
 }
+.main-compras{
+    display: flex;
+    text-align: start;
+}
+.ajustar-compras{
+    width: 80%;
+    background-color: #E8F7FD;
+}
+.ajustar-titulo-compras{
+    width: 80%;
+    background-color: #E8F7FD;
+    padding-left: 30%;
+    padding-top: 40px;
+    color:#4CBFCE;
+}
+.navbar{
+    border-top: 50px;
+}
+.d-flex{
+    padding: 0;
+}
+.Todos-contenidos{
+    display: flex;
+    text-align: start;
+}
+.contenido{
+    width: 100%;
+    height: 250px;
+}
+.IMG-ref{
+    width: 40%;
+}
+.contenido-p{
+    width: 60%;
+}
