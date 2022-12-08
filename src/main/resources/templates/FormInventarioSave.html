@@ -33,7 +33,7 @@
       </div>
       <div class="row justify-content-start">
         <div class="col-4">
-          <a th:href="@{/Listar}" href="inventario.html"><img class="inventario-logo" src="../static/img/INVENTARIO.png" th:src="@{/img/INVENTARIO.png}" alt="inventario"></a>
+          <a th:href="@{/listar}" href="inventarariado.html"><img class="inventario-logo" src="../static/img/INVENTARIO.png" th:src="@{/img/INVENTARIO.png}" alt="inventario"></a>
         </div>
       </div>
       <div class="row justify-content-start">
@@ -43,7 +43,7 @@
       </div>
       <div class="row justify-content-start">
         <div class="col-4">
-          <a th:href="@{/}" href="index.html"><img class="salir-logo" src="../static/img/SALIR.png" alt="salir"></a>
+          <a th:href="@{/}" href="index.html"><img class="salir-logo" th:src="@{/img/SALIR.png}" src="../static/img/SALIR.png" alt="salir"></a>
         </div>
       </div>
     </div>
@@ -57,7 +57,11 @@
               <h3>Agregar Inventario</h3>
             </div>
             <div class="card-body">
-
+              <div class="form-grup">
+                <label>ID
+                  <input th:field="*{id}" type="text" class="form-control">
+                </label>
+                </div>
               <div class="form-grup">
                 <label>Nombre
                   <input th:field="*{nombre}" type="text" class="form-control">
@@ -70,7 +74,7 @@
               </div>
               <div class="form-grup">
                 <label>Codigo
-                  <input th:field="*{id}" type="text" class="form-control">
+                  <input th:field="*{codigo}" type="text" class="form-control">
                 </label>
               </div>
             </div>

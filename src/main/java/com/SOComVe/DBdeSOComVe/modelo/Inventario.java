@@ -1,27 +1,24 @@
 package com.SOComVe.DBdeSOComVe.modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import org.springframework.lang.NonNull;
+import jakarta.persistence.*;
+
 
 @Entity
 @Table (name = "inventario")
 public class Inventario {
-    @NonNull
+
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
-    @NonNull
-    @GeneratedValue
+
     private String nombre;
-    @NonNull
-    @GeneratedValue
+
     private long cantidad;
-    @NonNull
-    @GeneratedValue
+
     private long codigo;
+
+    public Inventario() {
+    }
 
     public long getId() {
         return Id;
@@ -31,12 +28,11 @@ public class Inventario {
         Id = id;
     }
 
-    @NonNull
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(@NonNull String nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 

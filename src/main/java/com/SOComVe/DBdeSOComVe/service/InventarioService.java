@@ -17,7 +17,7 @@ public class InventarioService implements InventarioServiceINPM {
 
     @Override
     public List<Inventario> Listar(){
-        return (List<Inventario>) data.findAll();
+        return (List<Inventario>)data.findAll();
     }
 
     @Override
@@ -28,12 +28,13 @@ public class InventarioService implements InventarioServiceINPM {
     @Override
     public int save(Inventario i){
         int res=0;
-        Inventario inventario= (Inventario) data.save(i);
-        if (inventario != null){
+        Inventario Inventarios=data.save(i);
+        if (!Inventarios.equals(null)){
             res=1;
         }
-        return res ;
+        return res;
     }
+
 
     @Override
     public void delete(Long Id) {
