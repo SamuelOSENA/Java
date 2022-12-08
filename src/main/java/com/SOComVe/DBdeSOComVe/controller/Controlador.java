@@ -32,6 +32,9 @@ public class Controlador {
     public String menu(){
         return "main";
     }
+    @GetMapping("/perfil")
+    public String perfil(){return "perfil";}
+
 
     @GetMapping("/listar")
     public String invention(Model model){
@@ -57,6 +60,7 @@ public class Controlador {
         model.addAttribute("Inventario",inventario);
         return "FormInventarioSave";
     }
+
 
     @GetMapping("/delete/{id}")
     public String delete(Model model, @PathVariable Long id){

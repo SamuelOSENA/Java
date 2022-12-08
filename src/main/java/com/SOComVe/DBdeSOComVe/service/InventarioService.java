@@ -39,5 +39,6 @@ public class InventarioService implements InventarioServiceINPM {
     @Override
     public void delete(Long Id) {
         data.deleteById(Id);
+
     }
 }

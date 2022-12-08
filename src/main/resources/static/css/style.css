@@ -77,7 +77,6 @@ a{
 }
 .ajustar{
     width: 80%;
-    background-color:  #E8F7FD;
 }
 .ajustar-nav{
     width: 20%;
@@ -105,4 +104,65 @@ a{
     padding-top: 20px;
     padding-left: 35%;
     color: #4CBFCE;
+}
+.ajustar-inventario{
+    background-color: #E8F7FD;
+    width: 80%;
+}
+.ajustar-perfil{
+    display:inline;
+    background-color: #E8F7FD;
+    width: 70%;
+    margin-right: 10%;
+}
+
+.foto-perfil{
+    padding-left: 20px;
+    padding-top:  20px;
+    width: 30%;
+    height: 20%;
+}
+.contenido-perfil{
+
+    width: 70%;
+}
+.allies-images{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.btn-group{
+    margin-left: 50%;
+    padding-top: 20px;
+}
+.NOMBE{
+    padding-top: 20px;
+}
+.btn.btn-primary{
+    background-color: #4CBFCE;
+    border-color: #4CBFCE;
+}
+.ajustar-perfil-contenido-1{
+    display: flex;
+}
+.ajustar-perfil-contenido-2{
+    margin-top: 20px;
+    display: flex;
+    background-color: #E8F7FD;
+}
+
+.list-group{
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 30%;
+}
+.list-group-item{
+    background-color: #E8F7FD;
+}
+.nav-logo-perfil{
+    margin-left: 140px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:#333174 1px solid;
 }
