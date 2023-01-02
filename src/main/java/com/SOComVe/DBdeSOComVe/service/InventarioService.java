@@ -2,7 +2,6 @@ package com.SOComVe.DBdeSOComVe.service;
 
 import com.SOComVe.DBdeSOComVe.modelo.Inventario;
 import com.SOComVe.DBdeSOComVe.repository.InventarioRepositorio;
-import com.SOComVe.DBdeSOComVe.repository.InventarioServiceINPM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,6 +37,5 @@ public class InventarioService implements InventarioServiceINPM {
     @Override
     public void delete(Long Id) {
         data.deleteById(Id);
-
     }
 }

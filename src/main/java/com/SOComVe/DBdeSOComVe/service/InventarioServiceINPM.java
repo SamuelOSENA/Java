@@ -1,4 +1,4 @@
-package com.SOComVe.DBdeSOComVe.repository;
+package com.SOComVe.DBdeSOComVe.service;
 
 import com.SOComVe.DBdeSOComVe.modelo.Inventario;
 

@@ -1,7 +1,8 @@
 package com.SOComVe.DBdeSOComVe.controller;
 
 
-import com.SOComVe.DBdeSOComVe.repository.InventarioServiceINPM;
+import com.SOComVe.DBdeSOComVe.modelo.Usuarios;
+import com.SOComVe.DBdeSOComVe.service.InventarioServiceINPM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
@@ -23,10 +24,8 @@ public class Controlador {
 
     @Autowired
     private InventarioServiceINPM services;
-    @GetMapping("/")
-    public String inicio(){
-        return "index";
-    }
+
+
 
     @GetMapping("/Principal")
     public String menu(){
@@ -34,6 +33,10 @@ public class Controlador {
     }
     @GetMapping("/perfil")
     public String perfil(){return "perfil";}
+
+    @GetMapping("/compra")
+    public String comprar(){
+        return "compra";}
 
 
     @GetMapping("/listar")
@@ -60,7 +63,6 @@ public class Controlador {
         model.addAttribute("Inventario",inventario);
         return "FormInventarioSave";
     }
-
 
     @GetMapping("/delete/{id}")
     public String delete(Model model, @PathVariable Long id){
